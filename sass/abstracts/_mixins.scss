@@ -1,0 +1,13 @@
+@mixin clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin grid-col-width ($colunmLength, $totalColumns) {
+  width: calc((
+      #{$colunmLength} * 100% - #{$gutter-horizontal} * (#{$totalColumns} - #{$colunmLength}) 
+    ) / #{$totalColumns});
+}

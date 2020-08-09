@@ -1,0 +1,26 @@
+{
+  "name": "natours-sass-project",
+  "version": "1.0.0",
+  "description": "Sass course project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/knbs/natours-sass-project.git"
+  },
+  "keywords": [
+    "sass",
+    "css"
+  ],
+  "author": "Juan Perdomo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/knbs/natours-sass-project/issues"
+  },
+  "homepage": "https://github.com/knbs/natours-sass-project#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

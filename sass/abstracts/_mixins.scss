@@ -18,3 +18,26 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+// $breakport: phone, portrait, landscape, desktop-big
+@mixin respond($breakpoint) {
+  // <= 600px
+  @if $breakpoint == phone { 
+    @media (max-width: 37.5em) { @content; }
+  }
+
+  // <= 900px
+  @if $breakpoint == portrait {
+    @media (max-width: 56.25em) { @content; }
+  }
+
+  // <= 1200px
+  @if $breakpoint == landscape {
+    @media (max-width: 75em) { @content; }
+  }
+
+  // >= 1800px
+  @if $breakpoint == desktop-big {
+    @media (min-width: 112.5em) { @content; }
+  }
+}
